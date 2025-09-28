@@ -1,0 +1,7 @@
+services:
+  whisper:
+    build: .
+    container_name: whisper-service
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
